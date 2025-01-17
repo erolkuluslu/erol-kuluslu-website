@@ -1,0 +1,26 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom Aurora Effect Styles */
+@layer utilities {
+  .bg-aurora {
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Smooth scrolling and better text rendering */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Prevent background color flash on page load */
+  body {
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+  }
+} 
