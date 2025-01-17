@@ -5,8 +5,8 @@ const {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./erol-kuluslu-website/src/**/*.{js,jsx}",
-    "./erol-kuluslu-website/index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
   ],
   theme: {
     extend: {
