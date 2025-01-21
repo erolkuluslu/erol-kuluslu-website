@@ -53,25 +53,27 @@ const SocialMedia = () => {
   ];
 
   return (
-    <section id="social" className="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-200" ref={socialRef}>
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 animate-fade-in">
+    <section id="social" className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-200" ref={socialRef}>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 sm:mb-12 animate-fade-in">
           Connect With Me
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {socialLinks.map((social) => (
             <a
               key={social.id}
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-item opacity-0 flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              className="social-item opacity-0 group flex flex-col items-center p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
-              <span className="text-4xl mb-2">{social.icon}</span>
-              <span className="text-gray-800 dark:text-white font-medium mb-2">
+              <span className="text-2xl sm:text-3xl mb-3 group-hover:scale-110 transition-transform duration-200">
+                {social.icon}
+              </span>
+              <span className="text-sm sm:text-base text-gray-800 dark:text-white font-medium mb-2">
                 {social.name}
               </span>
-              <span className="text-sm text-gray-600 dark:text-gray-300 text-center">
+              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 text-center line-clamp-2">
                 {social.description}
               </span>
             </a>
