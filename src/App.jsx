@@ -28,6 +28,11 @@ function App() {
               <Articles />
               <SocialMedia />
             </main>
+            
+            {/* Test Footer */}
+            <footer className="relative z-10 text-center py-4 text-gray-600 dark:text-gray-400">
+              <p>© 2024 Erol Kuluslu - Updated with Automatic Deployment</p>
+            </footer>
           </div>
         </div>
       </Router>
