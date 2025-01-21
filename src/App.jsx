@@ -31,7 +31,7 @@ function App() {
             
             {/* Test Footer */}
             <footer className="relative z-10 text-center py-4 text-gray-600 dark:text-gray-400">
-              <p>© 2024 Erol Kuluslu - Updated with Automatic Deployment</p>
+              <p>© 2024 Erol Kuluslu - Portfolio Website v1.0</p>
             </footer>
           </div>
         </div>
