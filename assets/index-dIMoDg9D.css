@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;@layer utilities{.bg-aurora{background-size:400% 400%;background-repeat:no-repeat}}@layer base{html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{transition-property:color,background-color;transition-duration:.2s}}
